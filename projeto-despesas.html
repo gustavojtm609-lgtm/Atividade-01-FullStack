@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página do projeto Full Stack de controle de despesas desenvolvido por Gustavo Tarifa.">
+  <title>Sistema de Controle de Despesas | Gustavo Tarifa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">GT</span><span>Gustavo Tarifa</span></a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#tecnologias">Tecnologias</a>
+      <a href="index.html#projetos">Projetos</a>
+      <a href="desenhos.html">Desenhos</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Início</a> / Projeto / Sistema de Controle de Despesas</div>
+    <div class="kicker">Projeto Full Stack</div>
+    <h1>Sistema de Controle de <span class="highlight">Despesas</span></h1>
+    <p class="lead">Aplicação desenvolvida para cadastrar, consultar e organizar despesas pessoais, conectando interface, servidor e banco de dados.</p>
+    <div class="button-row"><a class="btn btn-primary" href="https://github.com/gustavojtm609-lgtm/trabalho-despesas-backend" target="_blank" rel="noopener">Ver backend no GitHub</a><a class="btn btn-secondary" href="https://github.com/gustavojtm609-lgtm" target="_blank" rel="noopener">Abrir perfil no GitHub</a></div>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="container project-detail-grid">
+    <div>
+      <div class="dashboard-large" aria-label="Representação visual do dashboard do sistema">
+        <div class="dash-head"><span class="dash-logo">Finanças</span><span class="dash-nav">Dashboard · Despesas · Categorias</span></div>
+        <div class="dash-cards"><div class="dash-card"><small>Total de gastos</small><strong>R$ 2.480,00</strong></div><div class="dash-card"><small>Despesas</small><strong>18 registros</strong></div><div class="dash-card"><small>Categorias</small><strong>6 ativas</strong></div></div>
+        <div class="dash-list"><div class="dash-item"><strong>Descrição</strong><strong>Categoria</strong><strong>Valor</strong></div><div class="dash-item"><span>Mercado</span><span>Alimentação</span><span>R$ 320</span></div><div class="dash-item"><span>Internet</span><span>Serviços</span><span>R$ 120</span></div><div class="dash-item"><span>Transporte</span><span>Mobilidade</span><span>R$ 180</span></div></div>
+      </div>
+      <p class="note">Representação visual criada em HTML e CSS para explicar a proposta do sistema.</p>
+    </div>
+    <article class="card">
+      <h2>Visão geral</h2>
+      <p>O sistema tem como objetivo facilitar o registro e o acompanhamento de gastos. O usuário pode cadastrar despesas e organizar as informações em uma interface centralizada.</p>
+      <div class="meta"><span>Participação: 100%</span><span>Projeto acadêmico</span><span>Full Stack</span></div>
+      <h3>Tecnologias do projeto</h3>
+      <div class="tech-cloud"><span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JavaScript</span><span class="tech">React</span><span class="tech">Node.js</span><span class="tech">Express</span><span class="tech">MySQL</span><span class="tech">Sequelize</span></div>
+    </article>
+  </div>
+</section>
+<section class="section">
+  <div class="container grid-2">
+    <article class="card"><h2>Principais funcionalidades</h2><ul class="feature-list"><li>Cadastro de despesas.</li><li>Listagem e organização dos registros.</li><li>Integração entre frontend e API.</li><li>Armazenamento das informações no MySQL.</li><li>Estrutura preparada para categorias e indicadores.</li></ul></article>
+    <article class="card"><h2>Como as partes se conectam</h2><div class="code-flow"><div class="flow-box"><strong>Frontend</strong><br><small>Interface e interação</small></div><div class="flow-box"><strong>Backend</strong><br><small>Regras e API</small></div><div class="flow-box"><strong>Banco</strong><br><small>Persistência</small></div></div><p>O frontend envia requisições para o backend. A API processa os dados, utiliza o Sequelize para conversar com o MySQL e devolve uma resposta para a interface.</p><a class="btn btn-secondary" href="artigo-fullstack.html">Ler explicação completa</a></article>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="container"><article class="card"><div class="kicker">Observação técnica</div><h2>Portfólio em HTML e CSS</h2><p>O sistema de despesas é apresentado como projeto Full Stack. Já este site de portfólio foi construído somente com HTML e CSS, sem JavaScript ou frameworks, conforme a proposta escolhida para a apresentação.</p></article></div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <span>© 2026 Gustavo Junio Tarifa de Moraes.</span>
+    <span>Portfólio criado com HTML e CSS.</span>
+  </div>
+</footer>
+</body>
+</html>

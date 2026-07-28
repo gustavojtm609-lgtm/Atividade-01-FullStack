@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artigo sobre comunicação entre frontend, backend, API e banco de dados.">
+  <title>Como frontend e backend se comunicam | Gustavo Tarifa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">GT</span><span>Gustavo Tarifa</span></a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#tecnologias">Tecnologias</a>
+      <a href="index.html#projetos">Projetos</a>
+      <a href="desenhos.html">Desenhos</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+
+<section class="page-hero"><div class="container article"><div class="breadcrumb"><a href="index.html">Início</a> / <a href="blog.html">Blog</a> / Frontend e backend</div><div class="kicker">Artigo técnico</div><h1>Como frontend, backend e banco de dados se comunicam</h1><p class="lead">Entender essa comunicação é uma das bases do desenvolvimento Full Stack.</p></div></section>
+<section class="section section-soft"><article class="container article">
+<p>Em uma aplicação Full Stack, cada parte possui uma responsabilidade. O frontend apresenta a interface para o usuário. O backend recebe e processa solicitações. O banco de dados guarda as informações de maneira persistente.</p>
+<div class="code-flow"><div class="flow-box"><strong>1. Frontend</strong><br><small>Coleta a ação do usuário</small></div><div class="flow-box"><strong>2. API</strong><br><small>Valida e processa</small></div><div class="flow-box"><strong>3. Banco</strong><br><small>Salva ou consulta</small></div></div>
+<h2>Exemplo no sistema de despesas</h2><p>Quando o usuário preenche o cadastro de uma despesa, o frontend reúne os dados e envia uma requisição ao backend. O Express recebe a requisição, aplica as regras da aplicação e utiliza o Sequelize para acessar o MySQL.</p><p>Depois que o banco confirma a operação, o backend devolve uma resposta. A interface usa essa resposta para informar que a despesa foi cadastrada ou para apresentar algum erro.</p>
+<blockquote>Separar responsabilidades torna o sistema mais organizado, facilita a manutenção e permite evoluir cada camada com menos impacto nas demais.</blockquote>
+<h2>O papel da API</h2><p>A API funciona como uma ponte. Ela define quais operações podem ser feitas e qual formato de dados será utilizado. Em um sistema de despesas, exemplos de operações são cadastrar, listar, atualizar e excluir registros.</p>
+<h2>Conclusão</h2><p>O desenvolvimento Full Stack não significa apenas conhecer várias tecnologias. É compreender como elas trabalham juntas. Ao construir um projeto completo, o desenvolvedor aprende a planejar a interface, organizar as regras do servidor e estruturar os dados.</p>
+</article></section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <span>© 2026 Gustavo Junio Tarifa de Moraes.</span>
+    <span>Portfólio criado com HTML e CSS.</span>
+  </div>
+</footer>
+</body>
+</html>
